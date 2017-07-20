@@ -120,6 +120,7 @@ a,a:hover {
 .panel {
   border-color:transparent;
   border-radius:0;
+  overflow: auto !important;
 }
 
 .thumbnail {
