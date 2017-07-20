@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        
+        <!-- Latest compiled and minified CSS & JS -->
+        <link rel="stylesheet" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet"  href="css/styles.css"> 
+ <link rel="stylesheet"  href="css/custom.css"> 
+      </head>
+	<body>
+
+<div class="container-fluid white">
+  
+<h1 ><img src="images/logo.png" width="150" height="60" alt="Cloud Magna"></h1>
+</div>
+
+<div id="masthead">  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="">Encuesta de satisfacción
+         
+        </h3>
+        <p class="" style="color:white;">Cloud Data Processing and Storage, S.A. de C.V.</p>
+      </div>
+     
+    </div> 
+  </div><!-- /cont -->
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="top-spacer"> 
+<div class="panel" style="margin-bottom:0px !important;">
+        <div class="panel-body">
+    <p class="question">Instrucciones:</p>
+    <p>Agradecemos su amable apoyo para llenar esta encuesta, el tiempo que se llevará para dar respuesta no excede los 3 minutos. Favor de contestar cada una de las preguntas, posteriormente deberá de dar click en el botón de enviar que aparece al final de la encuesta. Para Cloud Magna lo más importante siempre serán nuestros clientes y es por ello que queremos conocer su oponión acerca de la atención que le hemos brindado.</p>
+        </div>
+      </div>
+        </div>
+      </div>
+    </div> 
+  </div><!-- /cont -->
+  
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12"> 
+      <div class="panel">
+        <div class="panel-body">
+          
+             
+           
+ 
+  
+          
+          
+          <form id="myForm" method="get" onsubmit="return !!(getResults() & alerta());">
+  <p class="question">1. Conforme a tus últimas experiencias de leventamiento de un incidente o requerimiento a través de la mesa de ayuda, como podría calificar la atención recibida por parte de Cloud Magna en los siguientes aspectos:</p>    
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th></th>
+        
+        
+        <th class="text-center">Supera mis expectativas</th>
+        <th class="text-center">Cumple con mis expectativas</th>
+        <th class="text-center">Cumple parcialmente con mis expectativas</th>
+        <th class="text-center">No cumple con mis expectativas</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+
+      <td>Tiempos de respuesta para atender su llamada.</td>
+        <td class="text-center"><div class="radio">
+  <label><input type="radio" name="optradio-1-1" value="Supera mis expectativas" required></label>
+</div></td>
+
+        <td class="text-center"><div class="radio">
+  <label><input type="radio" name="optradio-1-1" value="Cumple con mis expectativas"></label>
+</div></td>
+        <td class="text-center"><div class="radio">
+  <label><input type="radio" name="optradio-1-1" value="Cumple parcialmente con mis expectativas"></label>
+</div></td>
+
+<td class="text-center"><div class="radio">
+  <label><input type="radio" name="optradio-1-1" value="No cumple con mis expectativas"></label>
+</div></td>
+      </tr>
+      <tr>
+          
+      <td>Capacidad de respuesta sobre el incidente o requerimiento.</td>
+        <td class="text-center"><div class="radio">
+  <label><input type="radio" name="optradio-1-2" value="Supera mis expectativas" required></label>
+</div></td>
+        <td class="text-center"><div class="radio">
+  <label><input type="radio" name="optradio-1-2" value="Cumple con mis expectativas"></label>
+</div></td>
+
+        <td class="text-center"><div class="radio">
+  <label><input type="radio" name="optradio-1-2" value="Cumple parcialmente con mis expectativas"></label>
+</div></td>
+<td class="text-center"><div class="radio">
+  <label><input type="radio" name="optradio-1-2"  value="No cumple con mis expectativas"></label>
+</div></td>
+      </tr>
+
+          
+      <td>Seguimiento al inicidente o requerimiento reportado.</td>
+        <td class="text-center"><div class="radio">
+  <label><input type="radio" name="optradio-1-3" value="Supera mis expectativas" required></label>
+</div></td>
+        <td class="text-center"><div class="radio">
+  <label><input type="radio" name="optradio-1-3" value="Cumple con mis expectativas"></label>
+</div></td>
+
+        <td class="text-center"><div class="radio">
+  <label><input type="radio" name="optradio-1-3" value="Cumple parcialmente con mis expectativas"></label>
+</div></td>
+<td class="text-center"><div class="radio">
+  <label><input type="radio" name="optradio-1-3"  value="No cumple con mis expectativas"></label>
+</div></td>
+      </tr>
+
+
+    </tbody>
+
+  
+</table>
+  <hr>
+<p class="question">2. En relación al servicio/producto contratado con Cloud Magna como califica a Cloud Magna en los siguientes aspectos.</p>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th></th>
+        
+        
+        <th class="text-center">Completamente satisfecho</th>
+        <th class="text-center">Satisfecho</th>
+        <th class="text-center">Insatisfecho</th>
+        <th class="text-center">Completamente insatisfecho</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+
+      <td>Al momento de solicitar la propuesta de los servicios se atendieron sus dudas técnicas de manera oportuna.</td>
+        <td class="text-center"><div class="radio">
+  <label><input type="radio" name="optradio-2-1" value="Completamente satisfecho" required></label>
+</div></td>
+
+        <td class="text-center"><div class="radio">
+  <label><input type="radio" name="optradio-2-1" value="Satisfecho"></label>
+</div></td>
+        <td class="text-center"><div class="radio">
+  <label><input type="radio" name="optradio-2-1" value="Insatisfecho"></label>
+</div></td>
+
+<td class="text-center"><div class="radio">
+  <label><input type="radio" name="optradio-2-1" value="Completamente insatisfecho"></label>
+</div></td>
+      </tr>
+      <tr>
+          
+      <td>Los servicios fueron entregados conforme al tiempo incado en la propuesta comercial.</td>
+        <td class="text-center"><div class="radio">
+  <label><input type="radio" name="optradio-2-2" value="Completamente satisfecho" required></label>
+</div></td>
+        <td class="text-center"><div class="radio" >
+  <label><input type="radio" name="optradio-2-2" value="Satisfecho"></label>
+</div></td>
+
+        <td class="text-center"><div class="radio">
+  <label><input type="radio" name="optradio-2-2" value="Insatisfecho"></label>
+</div></td>
+<td class="text-center"><div class="radio">
+  <label><input type="radio" name="optradio-2-2" value="Completamente insatisfecho"></label>
+</div></td>
+      </tr>
+
+          
+      <td>Se entrego información relacionada con la atención de cualquier incidente o requerimiento contratado de manera oportuna.</td>
+        <td class="text-center"><div class="radio">
+  <label><input type="radio" name="optradio-2-3" value="Completamente satisfecho" required></label>
+</div></td>
+        <td class="text-center"><div class="radio">
+  <label><input type="radio" name="optradio-2-3" value="Satisfecho"></label>
+</div></td>
+
+        <td class="text-center"><div class="radio">
+  <label><input type="radio" name="optradio-2-3" value="Insatisfecho"></label>
+</div></td>
+<td class="text-center"><div class="radio">
+  <label><input type="radio" name="optradio-2-3" value="Completamente insatisfecho"></label>
+</div></td>
+      </tr>
+
+      <td>Sus dudas administrativas han sido atendidas de manera oportuna (entrega de facturas, dudas sobre contratos).</td>
+        <td class="text-center"><div class="radio">
+  <label><input type="radio" name="optradio-2-4" value="Completamente satisfecho" required></label>
+</div></td>
+        <td class="text-center"><div class="radio">
+  <label><input type="radio" name="optradio-2-4"  value="Satisfecho"></label>
+</div></td>
+
+        <td class="text-center"><div class="radio">
+  <label><input type="radio" name="optradio-2-4"  value="Insatisfecho"></label>
+</div></td>
+<td class="text-center"><div class="radio">
+  <label><input type="radio" name="optradio-2-4" value="Completamente insatisfecho"></label>
+</div></td>
+      </tr>
+
+          
+      <td>La disponibilidad de los servicios contratados cada que usted requiere realizar algún proceso en ellos.</td>
+        <td class="text-center"><div class="radio">
+  <label><input type="radio" name="optradio-2-5" value="Completamente satisfecho" required></label>
+</div></td>
+        <td class="text-center"><div class="radio">
+  <label><input type="radio" name="optradio-2-5" value="Satisfecho"></label>
+</div></td>
+
+        <td class="text-center"><div class="radio">
+  <label><input type="radio" name="optradio-2-5" value="Insatisfecho"></label>
+</div></td>
+<td class="text-center"><div class="radio">
+  <label><input type="radio" name="optradio-2-5" value="Completamente insatisfecho"></label>
+</div></td>
+      </tr>
+
+
+    </tbody>
+  </table>
+<hr>
+<p class="question">3. Favor de contestar Sí o No.</p>    
+  <table class="table table-striped">
+    
+    <tbody>
+      <tr>
+
+      <td>¿Sabes qué es una queja, en relación al servicio que Cloud Magna te proporciona?</td>
+        <td class="text-center"><div class="radio">
+  <label><input type="radio" name="optradio-3-1" value="Si" required>Si</label>
+</div></td>
+
+        <td class="text-center"><div class="radio">
+  <label><input type="radio" name="optradio-3-1" value="No">No</label>
+</div></td>
+        
+      </tr>
+
+      <tr>
+
+      <td>¿Haz levantado algún folio de queja recientemente?</td>
+        <td class="text-center"><div class="radio">
+  <label><input type="radio" name="optradio-3-2" value="Si" required>Si</label>
+</div></td>
+
+        <td class="text-center"><div class="radio">
+  <label><input type="radio" name="optradio-3-2" value="No">No</label>
+</div></td>
+        
+      </tr>
+      <tr>
+
+      <td>¿Recibiste solución a tu queja?</td>
+        <td class="text-center"><div class="radio">
+  <label><input type="radio" name="optradio-3-3" value="Si" required>Si</label>
+</div></td>
+
+        <td class="text-center"><div class="radio">
+  <label><input type="radio" name="optradio-3-3" value="No">No</label>
+</div></td>
+        
+      </tr>
+      <tr>
+          
+      
+
+
+    </tbody>
+
+  
+</table>
+  
+  
+  <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+    
+<p class="question" style="color:red;">Si tu repuesta a la pregunta anterior fue NO, favor de proporcionar el folio de queja, en breve se pondrán en contacto contigo parasolucionar dicha queja.</p>
+  </div>
+  
+      
+  
+    
+ 
+      
+<div id="folio"></div>
+
+  <hr>
+<p class="question"></p>
+
+<div class="form-group">
+      <label for="calif">4. Tiene alguna duda o sugerencia que pueda ayudarnos a brindarle un mejor servicio.</label>
+      <textarea class="form-control" rows="2" id="calif" ></textarea>
+    </div>
+<hr>
+        <input id="mySubmit" type="submit" class="btn btn-primary"  value="Enviar datos" >
+</form>
+        </div>
+      </div>                                         
+   	</div><!--/col-12-->
+  </div>
+</div>
+                                                
+                                                                                
+
+
+
+
+<footer>
+  <div class="container">
+    <div class="row">
+     <p class="text-center">© Todos los derechos reservados 2017</p>
+      
+    </div>
+  </div>
+</footer>
+	
+</body>
+<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyC9KLxh67Tv3M4fC0ZQIqqgrsmcu20LEXs",
+    authDomain: "capacitacionrh-d44eb.firebaseapp.com",
+    databaseURL: "https://capacitacionrh-d44eb.firebaseio.com",
+    projectId: "capacitacionrh-d44eb",
+    storageBucket: "capacitacionrh-d44eb.appspot.com",
+    messagingSenderId: "1018765639246"
+  };
+  firebase.initializeApp(config);
+
+  // Get a reference to the database service
+  var database = firebase.database();
+var x = function myFunc() {
+  //   var x = Math.floor((Math.random() * 500) + 1);
+  //  return x;
+
+var x = "";
+    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+    for( var i=0; i < 9; i++ )
+    
+        x += possible.charAt(Math.floor(Math.random() * possible.length));
+        
+ document.getElementById("folio").innerHTML = "<div "+ 'class="input-group"'+">"+
+      "<span   class="+"input-group-addon>Folio</span><input "+ "type="+'"text"'+" class="+"form-control"+" "+ "value="+ x +" disabled ></div>";
+    return x;
+
+};
+y = x();
+
+  function writeUserData(A1, A2, A3, B1, B2, B3, B4, B5, C1, C2, C3, Sugerencias){
+    return firebase.database().ref('SLA-CLOUD/' +'encuesta'+ y ).set({
+  
+  A1: $('input[name=optradio-1-1]:checked').val(),
+  A2: $('input[name=optradio-1-2]:checked').val(),
+  A3: $('input[name=optradio-1-3]:checked').val(),
+  B1: $('input[name=optradio-2-1]:checked').val(),
+  B2: $('input[name=optradio-2-2]:checked').val(),
+  B3: $('input[name=optradio-2-3]:checked').val(),
+  B4: $('input[name=optradio-2-4]:checked').val(),
+  B5: $('input[name=optradio-2-5]:checked').val(),
+  C1: $('input[name=optradio-3-1]:checked').val(),
+  C2: $('input[name=optradio-3-2]:checked').val(),
+  C3: $('input[name=optradio-3-3]:checked').val(),
+  Sugerencias: $('#calif')["0"].value,
+ 
+  });
+
+}
+
+function alerta() {
+  alert("Gracias por responder a esta encuesta, su información se ha enviado correctamente.");
+  document.getElementById('myForm').reset();
+}
+
+function myFormValidation(){
+  document.getElementById("mySubmit").type = "";
+   
+
+}
+function localAlert() {
+ 
+  if(localStorage.Encuesta == 'Realizada'){
+alert("Usted ya realizó esta encuesta.");
+window.close();
+
+  }
+}
+
+        function getResults() {
+        
+
+console.log('1.1 '+ $('input[name=optradio-1-1]:checked').val() );
+console.log('1.2 '+ $('input[name=optradio-1-2]:checked').val() );
+console.log('1.3 '+ $('input[name=optradio-1-3]:checked').val() );
+console.log('2.1 '+ $('input[name=optradio-2-1]:checked').val() );
+console.log('2.2 '+ $('input[name=optradio-2-2]:checked').val() );
+console.log('2.3 '+ $('input[name=optradio-2-3]:checked').val() );
+console.log('2.4 '+ $('input[name=optradio-2-4]:checked').val() );
+console.log('2.5 '+ $('input[name=optradio-2-5]:checked').val() );
+console.log('3.1 '+ $('input[name=optradio-3-1]:checked').val() );
+console.log('3.2 '+ $('input[name=optradio-3-2]:checked').val() );
+console.log('3.3 '+ $('input[name=optradio-3-3]:checked').val() );
+console.log("Sugerencias: "+ $('#calif')["0"].value);
+
+      
+        }
+
+        
+        
+    </script>
+</html>

@@ -1,0 +1,36 @@
+{"encuestas":{
+
+    "encuesta1":{
+        "TipoCapacitacion":"Curso",
+        "NombreCapacitacion":"Anticorrupción",
+        "Fecha":"2017/02/15",
+        "Lugar":"Gabriel Mancera",
+        "ExpositorUno":"Gonzalo Hernández",
+        "ExpositorDos":"Pedró López",
+        "P1-1":"Bueno",
+        "P1-2":"Regular",
+        "P1-3":"Malo",
+        "P2-1":"Bueno",
+        "P2-2":"Regular",
+        "P2-3":"Malo",
+        "P2-4":"Bueno",
+        "P2-5":"Regular",
+        "P2-6":"Malo",
+        "P2-7":"Malo",
+        "P2-8":"Bueno",
+        "P2-9":"Regular",
+        "P2-10":"Malo",
+        "P3-1":"Bueno",
+        "P3-2":"Bueno",
+        "P4-1":"Regular",
+        "P4-2":"Bueno",
+        "P4-3":"Regular",
+        "P5-1":"Malo",
+        "P5-2":"Regular",
+        "Calificacion":"Explique...",
+        "Fortalezas":"Explique...",
+        "Mejora":"Explique...",
+        "Otros":"Explique..."
+    }
+    }
+}
