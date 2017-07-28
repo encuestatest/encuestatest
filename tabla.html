@@ -64,7 +64,24 @@
 </div>
 
     </body>
+<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
 <script>
-    $("#myresult").innerHTML ="<table"+' class="table"'+">"+"<tr>"+"<"+"/tr>"+"</table>";
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyC9KLxh67Tv3M4fC0ZQIqqgrsmcu20LEXs",
+    authDomain: "capacitacionrh-d44eb.firebaseapp.com",
+    databaseURL: "https://capacitacionrh-d44eb.firebaseio.com",
+    projectId: "capacitacionrh-d44eb",
+    storageBucket: "capacitacionrh-d44eb.appspot.com",
+    messagingSenderId: "1018765639246"
+  };
+  firebase.initializeApp(config);
+
+  // Get a reference to the database service
+  var database = firebase.database();
+
+
+
+$("#myresult").innerHTML ="<table"+' class="table"'+">"+"<tr>"+"<"+"/tr>"+"</table>";
 </script>
 </html>
