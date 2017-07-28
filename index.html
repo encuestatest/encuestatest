@@ -67,6 +67,19 @@
           
           
           <form id="myForm" method="get" onsubmit="return !!(writeUserData() & alerta());">
+<div class="row">
+   <div class="col-lg-4">
+       
+    
+      <label>Empresa</label>
+      <div class="input-group">  
+        <span class="input-group-addon">
+          <i class="fa fa-building-o fa-2" aria-hidden="true"></i>
+        </span>
+        <input id="empresa" type="text" class="form-control" value="" placeholder="Empresa a la que representa">
+      </div>
+  </div>
+</div>
   <p class="question">1. Conforme a tus últimas experiencias de leventamiento de un incidente o requerimiento a través de la mesa de ayuda, como podría calificar la atención recibida por parte de Cloud Magna en los siguientes aspectos:</p>    
   <table class="table table-striped">
     <thead>
@@ -387,6 +400,7 @@ y = x();
   C1: $('input[name=optradio-3-1]:checked').val(),
   C2: $('input[name=optradio-3-2]:checked').val(),
   C3: $('input[name=optradio-3-3]:checked').val(),
+  Empresa: $('#empresa').val(),
   Folio:$('#folio').val(),
   Sugerencias: $('#calif')["0"].value,
  
