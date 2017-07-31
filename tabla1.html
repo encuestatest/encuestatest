@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+  		<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        
+        <!-- Latest compiled and minified CSS & JS -->
+        <link rel="stylesheet" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet"  href="css/styles.css"> 
+ <link rel="stylesheet"  href="css/custom.css"> 
+    </head>
+    <body>
+    <div class="container-fluid white">
+  
+<h1 ><img src="images/logo.png" width="150" height="60" alt="Cloud Magna"></h1>
+</div>
+
+<div id="masthead">  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 class="">Resultados de satisfacción
+         
+        </h3>
+        <p class="" >Cloud Data Processing and Storage, S.A. de C.V.</p>
+      </div>
+     
+    </div> 
+  </div><!-- /cont -->
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="top-spacer"> 
+<div class="panel" style="margin-bottom:0px !important;">
+        <div class="panel-body">
+    <p class="question">Resultados</p>
+    <p>Aquí se encuentra la tabla de resultados de las encuestas.</p>
+        </div>
+      </div>
+        </div>
+      </div>
+    </div> 
+  </div><!-- /cont -->
+  
+</div>
+
+
+<div class="container">
+    
+    <div class="row">
+        <div id="myresult">
+            
+        </div>
+    </div>
+    
+</div>
+
+</body>
+<script src="https://www.gstatic.com/firebasejs/3.9.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyC9KLxh67Tv3M4fC0ZQIqqgrsmcu20LEXs",
+    authDomain: "capacitacionrh-d44eb.firebaseapp.com",
+    databaseURL: "https://capacitacionrh-d44eb.firebaseio.com",
+    projectId: "capacitacionrh-d44eb",
+    storageBucket: "capacitacionrh-d44eb.appspot.com",
+    messagingSenderId: "1018765639246"
+  };
+  firebase.initializeApp(config);
+
+  // Get a reference to the database service
+  var database = firebase.database();
+
+var playersRef = firebase.database().ref("/SLA-CLOUD/");
+
+playersRef.on("value", function(data) {
+   var newencuesta = data.val();
+ 
+   console.log("Empresa " + JSON.stringify(newPlayer));
+  
+ var output = [];
+                        output.push('<thead>','<tr>',
+                                        
+                                        '<th>Empresa</th>',
+                                        '<th>Folio</th>',
+                                        '<th>A1</th>',
+                                        '<th>Sugerencias</th>',
+                                        
+                                    '</tr>','</thead>','<tbody>');
+                        
+                        for (var i = 0; newencuesta ; i++) {
+                             output.push('<tr>',
+                                            // '<td>', newencuesta.PartitionKey._, '</td>',
+                                            '<td>', newencuesta.Empresa, '</td>',
+                                            '<td>', newencuesta.Folio, '</td>',
+                                            '<td>', newencuesta.A1, '</td>',
+                                            '<td>', newencuesta.Sugerencias, '</td>',
+                                            
+                                        '</tr>');
+                        }
+                        document.getElementById('myresult').innerHTML = '<table id="mytable" class="table">' + output.join('') + '</tbody>','</table>';
+   
+
+
+document.getElementById("myresult").innerHTML = JSON.stringify(newPlayer[0]);
+});
+
+</script>
+</html>
