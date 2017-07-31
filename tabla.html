@@ -85,7 +85,7 @@ var playersRef = firebase.database().ref("/SLA-CLOUD/");
 playersRef.on("value", function(data) {
    var newencuesta = data.val();
  
-   console.log("Empresa " + JSON.stringify(newempresa));
+   console.log("Empresa " + JSON.stringify(newencuesta));
   
  var output = [];
                         output.push('<thead>','<tr>',
