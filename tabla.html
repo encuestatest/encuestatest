@@ -80,8 +80,39 @@
   // Get a reference to the database service
   var database = firebase.database();
 
+var playersRef = firebase.database().ref("/SLA-CLOUD/");
+
+playersRef.on("value", function(data) {
+   var newencuesta = data.val();
+ 
+   console.log("Empresa " + JSON.stringify(newPlayer));
+  
+ var output = [];
+                        output.push('<thead>','<tr>',
+                                        
+                                        '<th>Empresa</th>',
+                                        '<th>Folio</th>',
+                                        '<th>A1</th>',
+                                        '<th>Sugerencias</th>',
+                                        
+                                    '</tr>','</thead>','<tbody>');
+                        
+                        for (var i = 0, newencuesta ; i++) {
+                             output.push('<tr>',
+                                            // '<td>', newencuesta.PartitionKey._, '</td>',
+                                            '<td>', newencuesta.Empresa, '</td>',
+                                            '<td>', newencuesta.Folio, '</td>',
+                                            '<td>', newencuesta.A1, '</td>',
+                                            '<td>', newencuesta.Sugerencias, '</td>',
+                                            
+                                        '</tr>');
+                        }
+                        document.getElementById('myresult').innerHTML = '<table id="mytable" class="table">' + output.join('') + '</tbody>','</table>';
+   
 
 
+document.getElementById("myresult").innerHTML = JSON.stringify(newPlayer[0]);
+});
 
 </script>
 </html>
