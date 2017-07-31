@@ -85,7 +85,7 @@ var playersRef = firebase.database().ref("/SLA-CLOUD/");
 playersRef.on("value", function(data) {
    var newencuesta = data.val();
  
-   console.log("Empresa " + JSON.stringify(newPlayer));
+   console.log("Empresa " + JSON.stringify(newencuesta));
   
  var output = [];
                         output.push('<thead>','<tr>',
@@ -97,7 +97,7 @@ playersRef.on("value", function(data) {
                                         
                                     '</tr>','</thead>','<tbody>');
                         
-                        for (var i = 0; newencuesta ; i++) {
+                        for (var i = 0; i < newencuesta ; i++) {
                              output.push('<tr>',
                                             // '<td>', newencuesta.PartitionKey._, '</td>',
                                             '<td>', newencuesta.Empresa, '</td>',
