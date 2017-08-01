@@ -53,7 +53,7 @@
 </div>
 
 
-<div class="container">
+<div class="container-fluid" style="background-color:white;">
     
     <div class="row">
         <div id="myresult">
@@ -83,32 +83,41 @@
 var playersRef = firebase.database().ref("/SLA-CLOUD/");
 
 playersRef.on("value", function(data) {
-   var newencuesta = data.val();
+   var respons = data.val();
  
-   console.log("Empresa " + JSON.stringify(newencuesta));
   
- var output = [];
-                        output.push('<thead>','<tr>',
-                                        
-                                        '<th>Empresa</th>',
-                                        '<th>Folio</th>',
-                                        '<th>A1</th>',
-                                        '<th>Sugerencias</th>',
-                                        
-                                    '</tr>','</thead>','<tbody>');
-                        
-                        for (var i = 0; i < newencuesta ; i++) {
-                             output.push('<tr>',
-                                            // '<td>', newencuesta.PartitionKey._, '</td>',
-                                            '<td>', newencuesta.Empresa, '</td>',
-                                            '<td>', newencuesta.Folio, '</td>',
-                                            '<td>', newencuesta.A1, '</td>',
-                                            '<td>', newencuesta.Sugerencias, '</td>',
-                                            
-                                        '</tr>');
-                        }
-                        document.getElementById('myresult').innerHTML = '<table id="mytable" class="table">' + output.join('') + '</tbody>','</table>';
+
+
+ var arr= [];
+ arr.push(respons);
+ var output = "";
+  output +='<thead>'+'<tr>'+ '<th>Encuesta</th>'+'<th>P1.1</th>'+ '<th>P1.2</th>'+ '<th>P1.3</th>'+ '<th>P2.1</th>'+ '<th>P2.2</th>'+ '<th>P2.3</th>'+ '<th>P2.4</th>'+ '<th>P2.5</th>'+ '<th>P3.1</th>'+ '<th>P3.2</th>'+ '<th>P3.3</th>'+ '<th>Folio</th>'+'<th>Sugerencias</th>'+'</tr>'+'</thead>'+'<tbody>';
+  
+ var y = Object.keys(respons);
+  for (var i = 0; i < y.length ; i++) {
+ var foo = y[i];
+        output +='<tr>'+'<td>'+ foo ;
+        output += '</td>' + '<td>' + arr[0][y[i]].A1;
+        output += '</td>' + '<td>' + arr[0][y[i]].A2;
+        output += '</td>' + '<td>' + arr[0][y[i]].A3;
+        output += '</td>' + '<td>' + arr[0][y[i]].B1;
+        output += '</td>' + '<td>' + arr[0][y[i]].B2;
+        output += '</td>' + '<td>' + arr[0][y[i]].B3;
+        output += '</td>' + '<td>' + arr[0][y[i]].B4;
+        output += '</td>' + '<td>' + arr[0][y[i]].B5;
+        output += '</td>' + '<td>' + arr[0][y[i]].C1;
+        output += '</td>' + '<td>' + arr[0][y[i]].C2;
+        output += '</td>' + '<td>' + arr[0][y[i]].C3;
+        output += '</td>' + '<td>' + arr[0][y[i]].Folio;
+        output += '</td>' + '<td>' + arr[0][y[i]].Empresa + '</td>' ;
+        output += '<td>' + arr[0][y[i]].Sugerencias + '</td>' + '</tr>';
+// console.log( y[i]);
+  }
+document.getElementById('myresult').innerHTML = '<table id="mytable" class="table">' + output + '</tbody>','</table>';
    
+
+
+console.log( respons);
 
 
 
